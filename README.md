@@ -4,10 +4,10 @@ This project includes two modules ms-firstmodule, ms-secondmodule
 
 ```
 ------------------------------------------------------------
-Root project 'multiproject'
+Root project 'multimodule'
 ------------------------------------------------------------
 
-Root project 'multiproject'
+Root project 'multimodule'
 +--- Project ':ms-firstmodule'
 \--- Project ':ms-secondmodule'
 ```
@@ -16,7 +16,7 @@ Root project 'multiproject'
 
 In root project there is only settings.gradle file, each of modules contain build.gradle.
 ```
-multiproject  
+multimodule  
   ├── buildSrc 
   ├── gradle
   ├── ms-firstmodule  
@@ -35,7 +35,7 @@ Use buildSrc to write and build your own custom Gradle plugins or extensions in 
   ├── buildSrc 
   │    ├── build.gradle 
   │    └── src/main/groovy
-  │        └── com.multiproject.common-conventions.gradle
+  │        └── com.multimodule.common-conventions.gradle
 
 ```
 ## Version Catalogs
