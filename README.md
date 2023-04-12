@@ -1,6 +1,6 @@
 # Example of creating a Gradle multi-module project
 
-This project includes two modules ms-firstmodule, ms-secondmodule
+This project consists of two modules ms-firstmodule and ms-secondmodule which can be started on port 8081 and 8082.
 
 ```
 ------------------------------------------------------------
@@ -14,7 +14,7 @@ Root project 'multimodule'
 
 ## Project structure
 
-In root project there is only settings.gradle file, each of modules contain build.gradle.
+The root project has only a `settings.gradle` file, whereas each modules have their own `build.gradle` files.
 ```
 multimodule  
   ├── buildSrc 
@@ -27,10 +27,10 @@ multimodule
 ```
 
 ## buildSrc 
-Use buildSrc to write and build your own custom Gradle plugins or extensions in your project's build script.
+Include the `buildSrc` directory in your Gradle project to write and build your own custom Gradle plugins or extensions for your project's build script
 
 ### Directory structure for buildSrc
-``src/main/groovy`` contains files with build logic
+`buildSrc/src/main/groovy` contains files with build logic
 ```
   ├── buildSrc 
   │    ├── build.gradle 
@@ -42,9 +42,9 @@ Use buildSrc to write and build your own custom Gradle plugins or extensions in 
 To simplify the management of dependencies across a multi-project build. It allow you to define a central list of versions for your dependencies, which can then be referenced across all of the projects in your build, ensuring consistency and avoiding version conflicts. 
 
 ### TOML file
-Create toml file ``gradle/libs.versions.toml`` that contains a list of commonly used dependencies, along with their corresponding versions.
+Create toml file `gradle/libs.versions.toml` that contains a list of commonly used dependencies, along with their corresponding versions.
 
-Change the dependencies defined in the ``libs.versions.toml`` file in your ``build.gradle`` file:
+Change the dependencies defined in the `libs.versions.toml` file in your `build.gradle` file:
 ```
 alias(libs.plugins.spring.boot)
 ```
