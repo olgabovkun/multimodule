@@ -1,0 +1,14 @@
+plugins {
+	id 'com.multiproject.common-conventions'
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+}
+
+dependencies {
+	implementation libs.spring.boot.web
+	testImplementation libs.spring.boot.test
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
