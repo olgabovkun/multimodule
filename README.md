@@ -1,4 +1,4 @@
-# Example of creating a Gradle multi-module project
+# Example of creating a Gradle multi-module project for a microservices architecture
 
 This project consists of two modules ms-firstmodule and ms-secondmodule which can be started on port 8081 and 8082.
 
